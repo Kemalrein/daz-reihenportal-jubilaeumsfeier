@@ -242,10 +242,10 @@ main{width:min(1280px,calc(100% - 28px));margin:0 auto;padding:38px 0 80px}
       </div>
       <div class="lesson-grid">
         
-        <button class="lesson-card locked" type="button" data-lesson="0" style="--accent:#ef3f70">
+        <button class="lesson-card unlocked" type="button" data-lesson="0" style="--accent:#ef3f70">
           <div class="card-top">
             <span class="lesson-number">Lektion 0</span>
-            <span class="status-pill"><span class="status-icon">⌁</span><span class="status-text">gesperrt</span></span>
+            <span class="status-pill"><span class="status-icon">✓</span><span class="status-text">geöffnet</span></span>
           </div>
           <div class="lesson-icon" aria-hidden="true">◇</div>
           
@@ -254,7 +254,7 @@ main{width:min(1280px,calc(100% - 28px));margin:0 auto;padding:38px 0 80px}
           <p class="function">Reihe verstehen, Beteiligungsmöglichkeiten wählen und den gemeinsamen Lernweg kennenlernen.</p>
           <div class="card-foot">
             <span aria-hidden="true"></span>
-            <span class="open-label">Schlüssel</span>
+            <span class="open-label">Öffnen</span>
           </div>
         </button>
         
@@ -593,7 +593,8 @@ main{width:min(1280px,calc(100% - 28px));margin:0 auto;padding:38px 0 80px}
 const LESSONS=[{"id":0,"date":"10.–14.08.2026","title":"Unser gemeinsames Vorhaben","question":"Was planen wir, was entsteht und wie kann ich mitarbeiten?","function":"Reihe verstehen, Beteiligungsmöglichkeiten wählen und den gemeinsamen Lernweg kennenlernen.","product":"Projektübersicht „Unser Weg zur Jubiläumsfeier“","stage":"Auftakt & Anlass","icon":"◇"},{"id":1,"date":"17.–21.08.2026","title":"Unsere Schule wird 50 Jahre alt","question":"Was feiern wir, und was haben wir an unserer Schule bereits erlebt?","function":"Den Jubiläumsanlass verstehen, Erlebnisse berichten und zeitlich einordnen.","product":"Erinnerungsnotizen und Anlassformulierung","stage":"Auftakt & Anlass","icon":"50"},{"id":2,"date":"17.–21.08.2026","title":"Eine Feier gut planen","question":"Was gehört zu einer gut geplanten Feier?","function":"Ideen sammeln, benennen und den wichtigen Planungsbereichen zuordnen.","product":"Feier-Mindmap","stage":"Auftakt & Anlass","icon":"▦"},{"id":3,"date":"24.–28.08.2026","title":"Unser Termin steht","question":"Wie halten wir unseren Termin so fest, dass alle genau wissen, wann und wo die Feier stattfindet?","function":"Teilinformationen erfragen, abgleichen und zu einer eindeutigen Termin- und Ortsangabe zusammenführen.","product":"Termin- und Ortskarte","stage":"Planen & Organisieren","icon":"◷"},{"id":4,"date":"24.–28.08.2026","title":"Unser Programm","question":"Was möchten wir auf unserer Feier machen – und wann?","function":"Aktivitäten aushandeln und einen verständlichen zeitlichen Ablauf entwickeln.","product":"Vorläufiger Programmplan","stage":"Planen & Organisieren","icon":"≡"},{"id":5,"date":"31.08.–04.09.2026","title":"Einkauf und Material","question":"Was brauchen wir für unsere Jubiläumsfeier?","function":"Gegenstände, Lebensmittel und Materialien mit Mengenangaben festhalten.","product":"Einkaufs- und Materialliste","stage":"Planen & Organisieren","icon":"▤"},{"id":6,"date":"31.08.–04.09.2026","title":"Aufgaben verteilen","question":"Wer übernimmt welche Aufgabe – und bis wann?","function":"Zuständigkeiten aushandeln, vereinbaren und mit Fristen dokumentieren.","product":"Aufgabenplan mit Namen und Fristen","stage":"Planen & Organisieren","icon":"✓"},{"id":7,"date":"07.–11.09.2026","title":"Unsere Gäste","question":"Wen möchten wir einladen – und warum?","function":"Schulische Gäste vorschlagen, die Auswahl begründen und die Anrede klären.","product":"Gästeliste und Adressatenprofile","stage":"Gäste & Einladungen","icon":"◎"},{"id":8,"date":"07.–11.09.2026","title":"Eine vollständige Einladung","question":"Was gehört in eine vollständige Einladungs-E-Mail?","function":"Einladungen lesen, vergleichen und ihre notwendigen Bestandteile ordnen.","product":"Kriterienplakat Einladungs-E-Mail","stage":"Gäste & Einladungen","icon":"@"},{"id":9,"date":"14.–18.09.2026","title":"Höflich einladen","question":"Wie laden wir eine Lehrkraft oder ein Mitglied der Schulleitung höflich ein?","function":"Adressatengerechte Formulierungen vergleichen und passende Redemittel entwickeln.","product":"Differenzierte Redemittelübersicht","stage":"Gäste & Einladungen","icon":"✉"},{"id":10,"date":"14.–18.09.2026","title":"Einen vollständigen Entwurf schreiben","question":"Wie wird aus unseren Hilfen ein vollständiger Einladungsentwurf?","function":"Gästeinformationen, E-Mail-Rahmen und Redemittel zu einem vollständigen vorläufigen Entwurf verbinden.","product":"Vollständiger vorläufiger Einladungsentwurf","stage":"Gäste & Einladungen","icon":"✎"},{"id":11,"date":"21.09.2026","title":"Vom Entwurf zur sendefertigen Einladungs-E-Mail","question":"Wie wird unser Einladungsentwurf sendefertig?","function":"Den vollständigen Entwurf aus der Empfängerperspektive prüfen, gezielt überarbeiten, integrieren und freigeben.","product":"Sendefertige Papiervorlage der Einladungs-E-Mail","stage":"Gäste & Einladungen","icon":"◆","special":"Prüfungsstunde"},{"id":12,"date":"21.–25.09.2026","title":"Die Einladungen versenden","question":"Wie übertragen und versenden wir unsere freigegebenen Einladungen?","function":"Freigegebene Papiervorlagen digital übertragen, zuordnen, dokumentieren und tatsächlich versenden.","product":"Digital versendete und dokumentierte Einladungen","stage":"Gäste & Einladungen","icon":"↗"},{"id":13,"date":"28.09.–02.10.2026","title":"Wer kommt zur Feier?","question":"Wie bereiten wir unsere Gästekommunikation vor?","function":"Antworten auswerten, die Gästeliste aktualisieren und mündliche Rollen erproben.","product":"Endgültige Gästeliste und Rollenkarten","stage":"Durchführung & Transfer","icon":"◉"},{"id":14,"date":"02.10.2026","title":"Unsere Jubiläumsfeier","question":"Wir begrüßen, moderieren und feiern gemeinsam.","function":"Sprachliche, organisatorische und kooperative Kompetenzen authentisch anwenden.","product":"Gemeinsam durchgeführte Jubiläumsfeier","stage":"Durchführung & Transfer","icon":"★","special":"Handlungsprodukt"},{"id":15,"date":"Nach den Herbstferien","title":"Rückblick und Dank","question":"Wie war unsere Jubiläumsfeier – und wofür möchten wir uns bedanken?","function":"Erlebnisse im Perfekt berichten, reflektieren und eine Dankesnachricht verfassen.","product":"Rückblick und optionale Dankesnachricht","stage":"Durchführung & Transfer","icon":"↺","special":"optional"}];
 const KEYS={"0": "5018", "1": "1742", "2": "2639", "3": "3981", "4": "4275", "5": "5564", "6": "6417", "7": "7193", "8": "8352", "9": "9046", "10": "1068", "11": "2194", "12": "1257", "13": "1376", "14": "1428", "15": "1509"};
 const STORAGE="daz-reihenportal-v1-unlocked";
-let unlocked=new Set(JSON.parse(localStorage.getItem(STORAGE)||"[]"));
+const DEFAULT_UNLOCKED=[0];
+let unlocked=new Set([...DEFAULT_UNLOCKED,...JSON.parse(localStorage.getItem(STORAGE)||"[]")]);
 let currentLesson=null;
 
 const $=s=>document.querySelector(s);
@@ -636,7 +637,7 @@ $("#replayIntro").addEventListener("click",()=>{
 });
 $("#resetProgress").addEventListener("click",()=>{
   if(confirm("Alle Freischaltungen auf diesem Gerät zurücksetzen?")){
-    unlocked.clear();save();updateCards();toast("Fortschritt zurückgesetzt");
+    unlocked=new Set(DEFAULT_UNLOCKED);save();updateCards();toast("Fortschritt zurückgesetzt");
   }
 });
 
