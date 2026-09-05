@@ -27,3 +27,10 @@
 - L14 bleibt Feier/Handlungsprodukt und wurde nicht als regulaere Unterrichtsseite erstellt
 - L15 bleibt optional und wurde nicht bearbeitet
 - Pufferphasen unveraendert
+
+05.09.2026 - Lernhub L01-L11 Endfassung
+
+- Gemeinsame Lektionsuebersicht fuer die Lektionen 1 bis 11 veroeffentlicht
+- Einheitlicher Rueckweg zur Lektionsuebersicht in allen elf Lektionen
+- iPad-Darstellung in Hoch- und Querformat geprueft
+- Die historischen Seiten L00, L12 und L13 bleiben erhalten, sind aber nicht in der neuen Uebersicht verlinkt
