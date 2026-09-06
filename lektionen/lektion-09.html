@@ -12,7 +12,38 @@ footer{background:#fff;border-top:1px solid var(--line);padding:9px 22px;display
 @media(max-width:640px){.brand{font-size:.8rem}.event{font-size:.65rem}button{padding:7px 10px}.timer{font-size:1rem}.stripe{height:5px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
-<link rel="stylesheet" href="../hub-navigation.css">
+<style>.hub-return{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:max-content;
+  max-width:100%;
+  min-height:42px;
+  padding:8px 12px;
+  border:1px solid var(--line,rgba(23,49,63,.24));
+  border-radius:12px;
+  background:#fff;
+  color:var(--pink,#ef3f70);
+  text-decoration:none;
+  font-family:inherit;
+  font-size:13px;
+  font-weight:950;
+  line-height:1.15;
+  letter-spacing:.04em;
+  white-space:nowrap;
+  box-shadow:0 5px 14px rgba(23,49,63,.08);
+}
+.hub-return:hover{border-color:var(--pink,#ef3f70);transform:translateY(-1px)}
+.hub-return:focus-visible{outline:4px solid rgba(27,143,180,.28);outline-offset:3px}
+@media(max-width:900px){
+  .top-actions .utility-btn span{display:none}
+  .top-actions .utility-btn{width:41px;padding:0;justify-content:center}
+}
+@media(max-width:640px){
+  .hub-return{min-height:40px;padding:7px 10px;font-size:12px;letter-spacing:.02em}
+}
+@media print{.hub-return{display:none!important}}
+</style>
 </head>
 <body><div class="app"><div><div class="stripe"></div><header><a class="brand hub-return" href="../index.html" aria-label="Zur Lektionsübersicht">← Lektionsübersicht</a>
 <div class="phase"><span id="phaseLabel">Phase 1 von 7</span><div class="bar"><span id="progress" style="width:14.285714285714286%"></span></div></div><div class="event">01.10.2026<br>1.-3. Stunde | FZH101</div></header></div><main><section class="slide active" data-seconds="180"><article class="card"><div class="eyebrow">Phase 1 | 3 Minuten</div><h1>Ankommen und Anschluss</h1><div class="lead">Den Bauplan aus L8 aktivieren und den heutigen Sprachfokus klären.</div><div class="task"><strong>Auftrag:</strong> Erinnere dich an den Bauplan aus L8. Heute prüfst du, wie einzelne Sätze auf einen Gast wirken.</div><div class="sentences"><strong>Sprachhilfe:</strong> Der Satz klingt ... · Der Satz passt, weil ... · Ich ändere ..., damit ...</div></article></section>
@@ -21,11 +52,14 @@ footer{background:#fff;border-top:1px solid var(--line);padding:9px 22px;display
 <section class="slide" data-seconds="600"><article class="card"><div class="eyebrow">Phase 4 | 10 Minuten</div><h1>Höfliche Mittel entdecken</h1><div class="lead">Höfliche Wörter und Satzmuster auswählen, zuordnen und begründen.</div><div class="task"><strong>Auftrag:</strong> Wählt passende Karten aus. Markiert das Wort oder Satzmuster, das die Formulierung höflich macht.</div><div class="steps"><div class="step"><b>1</b>Lest die Karten zu zweit.</div><div class="step"><b>2</b>Wählt passende Formulierungen.</div><div class="step"><b>3</b>Markiert das höfliche Mittel.</div></div><div class="sentences"><strong>Sprachhilfe:</strong> Der Satz klingt ... · Der Satz passt, weil ... · Ich ändere ..., damit ...</div></article></section>
 <section class="slide" data-seconds="600"><article class="card"><div class="eyebrow">Phase 5 | 10 Minuten</div><h1>Sätze überarbeiten</h1><div class="lead">Mindestens zwei direkte Sätze passend für einen schulischen Gast neu formulieren.</div><div class="task"><strong>Auftrag:</strong> Formuliere mindestens zwei direkte Sätze höflich und passend neu. Begründe eine Änderung.</div><div class="steps"><div class="step"><b>1</b>Wähle mindestens zwei direkte Sätze.</div><div class="step"><b>2</b>Formuliere sie höflich und passend neu.</div><div class="step"><b>3</b>Begründe eine Änderung.</div></div><div class="sentences"><strong>Sprachhilfe:</strong> Der Satz klingt ... · Der Satz passt, weil ... · Ich ändere ..., damit ...</div></article></section>
 <section class="slide" data-seconds="660"><article class="card"><div class="eyebrow">Phase 6 | 11 Minuten</div><h1>Formulierungshilfe sichern</h1><div class="lead">Gute Formulierungen gemeinsam prüfen und als Sprachhilfe festhalten.</div><div class="task"><strong>Auftrag:</strong> Bringe eine Formulierung ein. Prüft gemeinsam: Ist sie respektvoll, klar und für den Gast passend?</div><div class="steps"><div class="step"><b>1</b>Bringe eine gute Formulierung ein.</div><div class="step"><b>2</b>Prüft: respektvoll, klar, passend.</div><div class="step"><b>3</b>Sichere deine Lieblingsformulierung.</div></div><div class="sentences"><strong>Sprachhilfe:</strong> Der Satz klingt ... · Der Satz passt, weil ... · Ich ändere ..., damit ...</div></article></section>
-<section class="slide" data-seconds="180"><article class="card"><div class="eyebrow">Phase 7 | 3 Minuten</div><h1>Rückblick und Ausblick</h1><div class="lead">Den eigenen Lernschritt einschätzen und L10 vorbereiten.</div><div class="task"><strong>Auftrag:</strong> Zeige deinen Lernstand. In L10 nutzt du den Bauplan und die Formulierungshilfe für einen vollständigen Entwurf.</div><div class="sentences"><strong>Sprachhilfe:</strong> Der Satz klingt ... · Der Satz passt, weil ... · Ich ändere ..., damit ...</div></article></section></main><footer><div>Lektion 9 · Wie formulieren wir höflich und passend?</div><div class="controls"><button id="prev" aria-label="Vorherige Phase">Zurück</button><button id="timer" class="primary">Timer starten</button><span class="timer" id="clock">00:00</span><button id="next" aria-label="Nächste Phase">Weiter</button></div><div class="hint">Pfeiltasten: wechseln · Leertaste: Timer</div></footer></div><script>
+<section class="slide" data-seconds="180"><article class="card"><div class="eyebrow">Phase 7 | 3 Minuten</div><h1>Rückblick und Ausblick</h1><div class="lead">Den eigenen Lernschritt einschätzen und L10 vorbereiten.</div><div class="task"><strong>Auftrag:</strong> Zeige deinen Lernstand. In L10 nutzt du den Bauplan und die Formulierungshilfe für deinen individuellen Schreibplan. Die vollständige E-Mail schreibst du in L11.</div><div class="sentences"><strong>Sprachhilfe:</strong> Der Satz klingt ... · Der Satz passt, weil ... · Ich ändere ..., damit ...</div></article></section></main><footer><div>Lektion 9 · Wie formulieren wir höflich und passend?</div><div class="controls"><button id="prev" aria-label="Vorherige Phase">Zurück</button><button id="timer" class="primary">Timer starten</button><span class="timer" id="clock">00:00</span><button id="next" aria-label="Nächste Phase">Weiter</button></div><div class="hint">Pfeiltasten: wechseln · Leertaste: Timer</div></footer></div><script>
+function safeSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function safeGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+
 const slides=[...document.querySelectorAll('.slide')], total=slides.length;let index=0,remaining=Number(slides[0].dataset.seconds),running=false,handle=null;const clock=document.getElementById('clock'),label=document.getElementById('phaseLabel'),progress=document.getElementById('progress'),timer=document.getElementById('timer');
 function format(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
 function stop(){running=false;clearInterval(handle);handle=null;timer.textContent='Timer starten'}
-function show(i){stop();index=Math.max(0,Math.min(total-1,i));slides.forEach((s,j)=>s.classList.toggle('active',j===index));remaining=Number(slides[index].dataset.seconds);clock.textContent=format(remaining);label.textContent=`Phase ${index+1} von ${total}`;progress.style.width=`${((index+1)/total)*100}%`;slides[index].querySelector('.card').scrollTop=0;localStorage.setItem('daz-l09-neustart-slide',String(index))}
+function show(i){stop();index=Math.max(0,Math.min(total-1,i));slides.forEach((s,j)=>s.classList.toggle('active',j===index));remaining=Number(slides[index].dataset.seconds);clock.textContent=format(remaining);label.textContent=`Phase ${index+1} von ${total}`;progress.style.width=`${((index+1)/total)*100}%`;slides[index].querySelector('.card').scrollTop=0;safeSet('daz-l09-neustart-slide',String(index))}
 function toggleTimer(){if(running){stop();return}running=true;timer.textContent='Pause';handle=setInterval(()=>{if(remaining<=0){stop();return}remaining--;clock.textContent=format(remaining)},1000)}
-document.getElementById('prev').onclick=()=>show(index-1);document.getElementById('next').onclick=()=>show(index+1);timer.onclick=toggleTimer;document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(index+1);if(e.key==='ArrowLeft')show(index-1);if(e.key===' '){e.preventDefault();toggleTimer()}});show(Number(localStorage.getItem('daz-l09-neustart-slide')||0));
+document.getElementById('prev').onclick=()=>show(index-1);document.getElementById('next').onclick=()=>show(index+1);timer.onclick=toggleTimer;document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(index+1);if(e.key==='ArrowLeft')show(index-1);if(e.key===' '){e.preventDefault();toggleTimer()}});show(Number(safeGet('daz-l09-neustart-slide')||0));
 </script></body></html>
