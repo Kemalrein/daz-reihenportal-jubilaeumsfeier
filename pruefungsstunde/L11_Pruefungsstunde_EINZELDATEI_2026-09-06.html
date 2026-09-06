@@ -233,7 +233,88 @@ body.contrast .landing-shell{border-color:#000;box-shadow:none}
 
 .simple-check{color:#202020}.plain-check-row{border-bottom:1px solid #c9c9c9;padding:14px 0}.plain-check-row label{display:flex;align-items:center;gap:15px;cursor:pointer;font-size:clamp(17px,2vw,22px)}.plain-check-row input{width:26px;height:26px;flex-shrink:0;accent-color:#333}.plain-check-row details{margin:8px 0 0 41px;font-size:16px}.plain-check-row summary{cursor:pointer;width:fit-content;padding:8px 0}.plain-check-row details p{margin:4px 0 12px}.partner-simple h2{font-size:clamp(27px,4vw,44px)}.answer-stem{font-size:clamp(25px,3vw,34px);padding:20px 0;border-bottom:1px solid #c9c9c9}.wordbank{margin-top:30px;padding:20px;background:#f4f4f4;color:#222;border-radius:12px}.wordbank p{line-height:2}.oral-reflection p{font-size:clamp(25px,3.4vw,44px);font-weight:700;line-height:1.5;margin:20px 0 36px}
 </style>
-<style>.plain-check-row{display:grid;grid-template-columns:minmax(0,1fr) 90px;gap:8px;align-items:start;padding:13px 0}.plain-check-row label{font-size:18px;line-height:1.45}.plain-check-row details{margin:0;font-size:14px}.plain-check-row summary{padding:6px 0}.plain-check-row details[open]{grid-column:1/-1;margin-left:41px}.plain-check-row details p{font-size:17px;line-height:1.5}</style></head>
+<style>.plain-check-row{display:grid;grid-template-columns:minmax(0,1fr) 90px;gap:8px;align-items:start;padding:13px 0}.plain-check-row label{font-size:18px;line-height:1.45}.plain-check-row details{margin:0;font-size:14px}.plain-check-row summary{padding:6px 0}.plain-check-row details[open]{grid-column:1/-1;margin-left:41px}.plain-check-row details p{font-size:17px;line-height:1.5}</style><style id="viewport-frame">
+/* Screen frame: the active content scrolls between the phase header and navigation. */
+@media screen {
+ html,body{height:100%;overflow:hidden;overscroll-behavior:none}
+ body{min-height:0}
+ .app{height:100vh;height:100dvh;min-height:0;grid-template-rows:auto minmax(0,1fr);overflow:hidden}
+ .topbar{position:relative;min-height:58px;padding:6px clamp(12px,2vw,28px)}
+ main{width:min(1440px,calc(100% - 28px));height:100%;min-height:0;overflow:hidden;padding:14px 0 0}
+ .page{height:100%;min-height:0}
+ #landingPage.active,#homePage.active{overflow:auto;overscroll-behavior:contain;padding-bottom:14px;scrollbar-gutter:stable}
+ #phasePage.active{display:grid;grid-template-rows:auto minmax(0,1fr) auto;overflow:hidden}
+ .phase-head{margin-bottom:12px;gap:14px;align-items:center}
+ .phase-head h1{font-size:clamp(32px,4.2vw,58px)}
+ .phase-head p{font-size:14px;margin-top:5px}
+ .phase-big-icon{width:54px;height:54px;flex-shrink:0;font-size:29px}
+ .phase-content{min-height:0;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:0 8px 14px 0;scrollbar-gutter:stable}
+ .phase-content>.panel:first-child{margin-top:0}
+ .footer-nav{position:relative;bottom:auto;min-width:0;margin:0;padding:10px 0 max(10px,env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#fff;gap:10px}
+ .nav-btn{min-height:44px;padding:9px 15px}
+ .timer{min-width:144px;padding:7px 10px;margin:0}
+ .timer-time{font-size:30px;margin:3px 0 5px}
+ .timer-top{font-size:10px}
+ .timer-controls button{min-width:44px;min-height:36px;padding:5px 8px}
+ .home-head{margin-bottom:16px;gap:16px}
+ .page-title{font-size:clamp(32px,4vw,52px)}
+ .phase-grid{gap:12px}
+ .phase-card{min-height:0;padding:16px}
+ .phase-icon{width:42px;height:42px;margin:12px 0;font-size:24px}
+ .phase-card h3{font-size:21px;margin-bottom:7px}
+ .phase-card p{min-height:0;font-size:13px;line-height:1.4}
+ .phase-meta{margin-top:12px;padding-top:10px}
+ .partner-simple h2{margin:0 0 18px;font-size:clamp(28px,3.6vw,44px)}
+ .answer-stem{font-size:clamp(24px,2.4vw,32px);margin:12px 0;padding:12px 0}
+ .wordbank{margin-top:18px;padding:14px}
+ .wordbank h3{margin:0 0 8px}
+ .wordbank p{margin:0;line-height:1.7}
+ .oral-reflection p{font-size:clamp(24px,3.2vw,44px);margin:12px 0 24px}
+ .plain-check-row{padding:8px 0}
+ .plain-check-row summary{min-height:36px;display:list-item;padding:8px 0}
+ .landing-page.active{min-height:0}
+ .landing-shell{margin:auto}
+ @media(min-width:1000px){
+  .phase-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .write-layout{grid-template-columns:minmax(0,1fr) minmax(210px,.34fr)}
+ }
+ @media(max-height:800px){
+  main{padding-top:10px}
+  .phase-head{margin-bottom:10px}
+  .phase-head h1{font-size:clamp(30px,3.6vw,48px)}
+  .task{padding:13px 15px;font-size:17px}
+  .panel{padding:16px;margin-top:12px}
+  .mail-wrap{margin-top:10px}
+  .mail-bar{padding:7px 14px}
+  .mail-row{padding:8px 14px}
+  .mail-body{padding:13px 20px;line-height:1.5}
+  .decision-row{margin:10px auto;gap:10px}
+  .decision{min-height:44px}
+  .home-head{margin-bottom:12px}
+  .phase-card{padding:13px}
+  .phase-icon{margin:10px 0;width:38px;height:38px}
+  .phase-card h3{font-size:19px}
+  .phase-meta{margin-top:10px;padding-top:8px}
+ }
+ @media(max-width:700px){
+  main{width:calc(100% - 20px);padding-top:8px}
+  .phase-head{display:grid;grid-template-columns:minmax(0,1fr) 124px;gap:10px}
+  .phase-heading-wrap{gap:9px;align-items:center}
+  .phase-head h1{font-size:clamp(23px,5.7vw,36px);overflow-wrap:anywhere}
+  .phase-head p{font-size:12px}
+  .phase-big-icon{width:35px;height:35px;font-size:21px}
+  .timer{width:auto;min-width:0;padding:6px}
+  .timer-time{font-size:26px}
+  .timer-top{font-size:8px;letter-spacing:0}
+  .footer-nav{grid-template-columns:1fr auto 1fr;gap:6px}
+  .footer-nav .complete{grid-column:auto;grid-row:auto;justify-self:auto}
+  .nav-btn{font-size:12px;padding:8px;overflow-wrap:anywhere}
+  .phase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phase-card{padding:12px}
+ }
+}
+</style>
+</head>
 <body>
 <div class="app">
 <header class="topbar">
@@ -327,7 +408,7 @@ function renderHome(){stopTimer();$('#landingPage').classList.remove('active');$
 function requestOpen(n){if(isUnlocked(n)){openPhase(n);return}pendingPhase=n;$('#keyTitle').textContent=`Phase ${n} öffnen`;$('#keyInput').value='';$('#keyError').textContent='';$('#keyModal').classList.add('open');setTimeout(()=>$('#keyInput').focus(),80)}
 function submitKey(){const val=$('#keyInput').value.trim();if(KEYS[pendingPhase]===val){if(!state.unlocked.includes(pendingPhase))state.unlocked.push(pendingPhase);state.current=pendingPhase;save();$('#keyModal').classList.remove('open');openPhase(pendingPhase);toast('Phase geöffnet.')}else{$('#keyError').textContent='Der Schlüssel stimmt noch nicht.';$('#keyInput').select()}}
 function openPhase(n){state.current=n;save();stopTimer();const p=phase(n);$('#landingPage').classList.remove('active');$('#homePage').classList.remove('active');$('#homeBtn').classList.remove('hidden');const page=$('#phasePage');page.style.setProperty('--phase',p.color);page.style.setProperty('--phase-soft',p.soft);page.innerHTML=phaseShell(p,phaseBody(n));page.classList.add('active');bindPhase(n);setupTimer(p.time);currentSpeakText=taskText(n);window.scrollTo({top:0})}
-function phaseShell(p,body){return `<div class="phase-head"><div class="phase-heading-wrap"><div class="phase-big-icon">${p.icon}</div><div><h1>${p.title}</h1><p>Phase ${p.id} · ${p.time} Minuten</p></div></div><div class="timer" id="timer"><div class="timer-top">◷ Orientierung</div><div class="timer-time" id="timerTime">${String(p.time).padStart(2,'0')}:00</div><div class="timer-controls"><button id="timerStart" type="button">Start</button><button id="timerReset" type="button">Reset</button></div></div></div>${body}<div class="footer-nav"><button class="nav-btn" id="backBtn" type="button">← Zurück</button><button class="nav-btn primary complete" id="completeBtn" type="button">✓ Phase abschließen</button><button class="nav-btn next" id="nextBtn" type="button">Weiter →</button></div>`}
+function phaseShell(p,body){return `<div class="phase-head"><div class="phase-heading-wrap"><div class="phase-big-icon">${p.icon}</div><div><h1>${p.title}</h1><p>Phase ${p.id} · ${p.time} Minuten</p></div></div><div class="timer" id="timer"><div class="timer-top">◷ Orientierung</div><div class="timer-time" id="timerTime">${String(p.time).padStart(2,'0')}:00</div><div class="timer-controls"><button id="timerStart" type="button">Start</button><button id="timerReset" type="button">Reset</button></div></div></div><div class="phase-content" role="region" aria-label="Arbeitsbereich" tabindex="0">${body}</div><div class="footer-nav"><button class="nav-btn" id="backBtn" type="button">← Zurück</button><button class="nav-btn primary complete" id="completeBtn" type="button">✓ Phase abschließen</button><button class="nav-btn next" id="nextBtn" type="button">Weiter →</button></div>`}
 function taskText(n){return {
 1:'Wie geht es dir heute? Zeige nur mit deinem Daumen. Du musst nichts erklären.',
 2:'Können wir diese Nachricht so an eine Lehrkraft oder ein Mitglied der Schulleitung senden?',
